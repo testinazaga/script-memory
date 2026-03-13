@@ -1,0 +1,14 @@
+name: github_init_push_with_pat
+purpose: Initialize a local directory as a git repo and push it to GitHub using a Personal Access Token stored in a .env file
+language: bash
+dependencies:
+  - git
+  - bash 4+
+tags:
+  - git
+  - github
+  - pat
+  - authentication
+  - init
+  - push
+created: 2026-03-13
