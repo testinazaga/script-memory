@@ -1,0 +1,23 @@
+name: fastapi_jwt_httponly_cookies
+problem: Implement stateless JWT authentication in FastAPI using httpOnly cookies instead of localStorage
+environment:
+  os: ubuntu
+  python: "3.11"
+  stack: fastapi + mysql + react
+tags:
+  - fastapi
+  - jwt
+  - authentication
+  - cookies
+  - httponly
+  - security
+  - react
+  - axios
+dependencies:
+  - python-jose[cryptography]
+  - passlib[bcrypt]
+  - python-dotenv
+  - fastapi
+  - axios
+status: verified
+created: 2026-03-13

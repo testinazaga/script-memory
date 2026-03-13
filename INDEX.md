@@ -8,6 +8,9 @@ Master table of all stored scripts and solutions.
 | [esphome_sensor_boot_fix](scripts/esphome_sensor_boot_fix/) | YAML | esphome, esp32, home-assistant | Suppress invalid sensor readings on device boot |
 | [grafana_dashboard_provision](scripts/grafana_dashboard_provision/) | JSON | grafana, prometheus, monitoring | Provisionable infrastructure dashboard (CPU + RAM) |
 | [github_init_push_with_pat](scripts/github_init_push_with_pat/) | Bash | git, github, pat, authentication | Initialize a local git repo and push to GitHub using a PAT in .env |
+| [git_submodule_add](scripts/git_submodule_add/) | Bash | git, submodule, github, monorepo | Add an external public GitHub repo as a git submodule at a named path |
+| [github_push_blocked_secret_scanning](scripts/github_push_blocked_secret_scanning/) | Bash | git, github, security, secret-scanning | Fix a push blocked by GitHub secret scanning — remove secret, amend, force push |
+| [fastapi_jwt_httponly_cookies](scripts/fastapi_jwt_httponly_cookies/) | Python/JS | fastapi, jwt, cookies, security, react | Full FastAPI + React JWT auth using httpOnly cookies instead of localStorage |
 
 ## Structure
 

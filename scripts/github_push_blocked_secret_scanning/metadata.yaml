@@ -1,0 +1,16 @@
+name: github_push_blocked_secret_scanning
+problem: GitHub push protection blocks a push because a secret was accidentally committed in a file
+environment:
+  os: ubuntu
+  stack: git
+tags:
+  - git
+  - github
+  - security
+  - secret-scanning
+  - push-protection
+  - gitignore
+dependencies:
+  - git
+status: verified
+created: 2026-03-13

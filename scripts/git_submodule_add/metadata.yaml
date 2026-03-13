@@ -1,0 +1,14 @@
+name: git_submodule_add
+problem: Add an external public GitHub repository as a git submodule inside an existing repo
+environment:
+  os: ubuntu
+  stack: git
+tags:
+  - git
+  - submodule
+  - github
+  - monorepo
+dependencies:
+  - git
+status: verified
+created: 2026-03-13
