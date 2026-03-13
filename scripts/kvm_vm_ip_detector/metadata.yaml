@@ -1,0 +1,12 @@
+name: kvm_vm_ip_detector
+purpose: Detect IP addresses of running KVM/QEMU virtual machines
+language: python
+dependencies:
+  - libvirt-clients  # provides virsh
+  - net-tools        # provides arp
+tags:
+  - kvm
+  - networking
+  - virtualization
+  - ip-detection
+created: 2026-03-13

@@ -1,0 +1,12 @@
+name: esphome_sensor_boot_fix
+purpose: Suppress invalid sensor readings during ESP device boot/stabilization period
+language: yaml
+dependencies:
+  - esphome >= 2023.0
+tags:
+  - esphome
+  - esp32
+  - esp8266
+  - sensors
+  - home-assistant
+created: 2026-03-13

@@ -1,0 +1,35 @@
+# ESPHome Sensor Boot Fix
+# Prevents sensors from reporting invalid values on first boot
+# by delaying initial publish until the device has stabilized.
+
+esphome:
+  name: sensor_device
+  on_boot:
+    priority: -100
+    then:
+      - delay: 5s
+      - lambda: |-
+          id(boot_complete) = true;
+
+globals:
+  - id: boot_complete
+    type: bool
+    restore_value: no
+    initial_value: "false"
+
+sensor:
+  - platform: dht
+    pin: GPIO4
+    temperature:
+      name: "Temperature"
+      filters:
+        - lambda: |-
+            if (!id(boot_complete)) return {};
+            return x;
+    humidity:
+      name: "Humidity"
+      filters:
+        - lambda: |-
+            if (!id(boot_complete)) return {};
+            return x;
+    update_interval: 30s

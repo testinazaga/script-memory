@@ -1,0 +1,13 @@
+name: grafana_dashboard_provision
+purpose: Provisionable Grafana dashboard for infrastructure monitoring (CPU + RAM)
+language: json
+dependencies:
+  - grafana >= 9.0
+  - prometheus (node_exporter metrics)
+tags:
+  - grafana
+  - prometheus
+  - monitoring
+  - infrastructure
+  - provisioning
+created: 2026-03-13
